@@ -3,10 +3,10 @@
 
 // Page padding
 $padding-page: (
-  inline-start: rem(16px),
-  inline-end: rem(16px),
-  block-start: rem(16px),
-  block-end: rem(16px),
+  inline-start: bp(24px, 40px, 40px),
+  inline-end: bp(24px, 40px, 40px),
+  block-start: fluid(24px, 88px),
+  block-end: fluid(24px, 88px),
 );
 
 // Section padding
@@ -16,12 +16,20 @@ $padding-section: (
 
 // Container padding
 $padding-container: (
-  md: rem(16px),
+  cart-inline: rem(24px),
+  cart-block: rem(24px),
+  confirmation-inline: bp(24px, 40px, 40px),
+  confirmation-block-start: rem(40px),
+  confirmation-block-end: bp(24px, 40px, 40px),
 );
 
 // Container spacing
 $spacer-container: (
-  md: rem(16px),
+  main-layout-gap: rem(32px),
+  product-grid-col-gap: rem(24px),
+  product-grid-row-gap: bp(24px, 32px, 32px),
+  product-card-gap: rem(16px),
+  product-card-text-gap: rem(4px),
 );
 
 // Offset

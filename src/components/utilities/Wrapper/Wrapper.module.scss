@@ -1,0 +1,21 @@
+.wrapper {
+  --padding: calc(var(--pad-page-inline-start) + var(--pad-page-inline-end));
+
+  width: min(
+    100% - var(--padding),
+    var(--max-width, var(--size-wrapper-default))
+  );
+  margin-inline: auto;
+
+  &[data-width="narrow"] {
+    --max-width: var(--size-wrapper-narrow);
+  }
+
+  &[data-width="wide"] {
+    --max-width: var(--size-wrapper-wide);
+  }
+
+  &[data-width="full"] {
+    --max-width: 100%;
+  }
+}
