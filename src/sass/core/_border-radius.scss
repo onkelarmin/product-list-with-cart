@@ -1,0 +1,8 @@
+@use "helper" as *;
+
+// Border-radius
+$border-radius: (
+  md: rem(8px),
+  lg: rem(12px),
+  default-focus: rem(2px),
+);

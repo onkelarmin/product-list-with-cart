@@ -1,0 +1,16 @@
+// bs-none is used for transitions
+$box-shadow-colors: (
+  none: (
+    light: "transparent",
+  ),
+);
+
+$box-shadows-offsets: (
+  none: 0px 0px 0px 0px,
+);
+
+$box-shadows: (
+  // mobile-nav-menu: (
+  //   var(--bs-mobile-nav-menu),
+   // ),
+);

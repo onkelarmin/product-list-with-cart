@@ -1,0 +1,29 @@
+@use "helper" as *;
+
+$border-widths: (
+  none: rem(0px),
+  md: rem(1px),
+  lg: rem(2px),
+);
+
+$border-colors: (
+  none: (
+    light: "transparent",
+  ),
+  default-focus: (
+    light: "primary-500",
+  ),
+);
+
+$borders: (
+  none: (
+    width: "none",
+    style: "solid",
+    color: "none",
+  ),
+  default-focus: (
+    width: "lg",
+    style: "solid",
+    color: "default-focus",
+  ),
+);
