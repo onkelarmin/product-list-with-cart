@@ -1,7 +1,7 @@
 // This file is auto-generated.
 // Do not edit manually.
 
-import { type ProductType } from "../types";
+import type { ProductType } from "../types";
 import waffleWithBerriesThumbnail from "../assets/images/image-waffle-thumbnail.jpg";
 import waffleWithBerriesMobile from "../assets/images/image-waffle-mobile.jpg";
 import waffleWithBerriesTablet from "../assets/images/image-waffle-tablet.jpg";

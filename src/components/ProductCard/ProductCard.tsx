@@ -1,4 +1,5 @@
 import type { ProductType } from "../../types";
+import { Button } from "../utilities/Button/Button";
 import { Image } from "../utilities/Image/Image";
 
 type ProductCardProps = {
@@ -18,6 +19,7 @@ export function ProductCard({ product }: ProductCardProps) {
           desktop: "calc((76rem - 24rem - 2rem - 3rem) / 3)",
         }}
       />
+      <Button>Confirm Order</Button>
     </article>
   );
 }

@@ -1,0 +1,39 @@
+.button {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--btn-gap-default);
+  font: var(--font-3);
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: var(--btn-border-radius-default);
+  padding-inline: var(--btn-padding-inline-default);
+  padding-block: var(--btn-padding-block-default);
+  transition:
+    background-color var(--trans-fast-out),
+    color var(--trans-fast-out),
+    outline-color var(--trans-fast-in),
+    outline-offset var(--trans-fast-out-sensitive);
+
+  &[data-variant="default"] {
+    width: 100%;
+    background-color: var(--btn-bg-color-idle-default);
+    color: var(--btn-fg-color-idle-default);
+    border: none;
+
+    @media (hover: hover) {
+      &:not(:disabled):hover {
+        background-color: var(--btn-bg-color-hover-default);
+      }
+    }
+
+    &:disabled {
+      background-color: var(--btn-bg-color-disabled-default);
+      color: var(--btn-fg-color-disabled-default);
+      cursor: not-allowed;
+    }
+  }
+}

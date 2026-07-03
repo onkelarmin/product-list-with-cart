@@ -63,7 +63,7 @@ for (const product of productsData) {
 const fileContent = `// This file is auto-generated.
 // Do not edit manually.
 
-import { type ProductType } from "../types";
+import type { ProductType } from "../types";
 ${Array.from(imports).join("\n")}
 
 export const products = [
