@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Waffle with Berries",
+    "slug": "waffle-with-berries",
+    "category": "Waffle",
+    "price": 6.5,
+    "image": {
+      "thumbnail": {
+        "src": "./assets/images/image-waffle-thumbnail.jpg",
+        "width": 100,
+        "height": 96
+      },
+      "mobile": {
+        "src": "./assets/images/image-waffle-mobile.jpg",
+        "width": 654,
+        "height": 424
+      },
+      "tablet": {
+        "src": "./assets/images/image-waffle-tablet.jpg",
+        "width": 427,
+        "height": 424
+      },
+      "desktop": {
+        "src": "./assets/images/image-waffle-desktop.jpg",
+        "width": 502,
+        "height": 480
+      }
+    }
+  },
+  {
+    "name": "Vanilla Bean Crème Brûlée",
+    "slug": "vanilla-bean-creme-brulee",
+    "category": "Crème Brûlée",
+    "price": 7.0,
+    "image": {
+      "thumbnail": {
+        "src": "./assets/images/image-creme-brulee-thumbnail.jpg",
+        "width": 100,
+        "height": 96
+      },
+      "mobile": {
+        "src": "./assets/images/image-creme-brulee-mobile.jpg",
+        "width": 654,
+        "height": 424
+      },
+      "tablet": {
+        "src": "./assets/images/image-creme-brulee-tablet.jpg",
+        "width": 427,
+        "height": 424
+      },
+      "desktop": {
+        "src": "./assets/images/image-creme-brulee-desktop.jpg",
+        "width": 502,
+        "height": 480
+      }
+    }
+  },
+  {
+    "name": "Macaron Mix of Five",
+    "slug": "macaron-mix-of-five",
+    "category": "Macaron",
+    "price": 8.0,
+    "image": {
+      "thumbnail": {
+        "src": "./assets/images/image-macaron-thumbnail.jpg",
+        "width": 100,
+        "height": 96
+      },
+      "mobile": {
+        "src": "./assets/images/image-macaron-mobile.jpg",
+        "width": 654,
+        "height": 424
+      },
+      "tablet": {
+        "src": "./assets/images/image-macaron-tablet.jpg",
+        "width": 427,
+        "height": 424
+      },
+      "desktop": {
+        "src": "./assets/images/image-macaron-desktop.jpg",
+        "width": 502,
+        "height": 480
+      }
+    }
+  },
+  {
+    "name": "Classic Tiramisu",
+    "slug": "classic-tiramisu",
+    "category": "Tiramisu",
+    "price": 5.5,
+    "image": {
+      "thumbnail": {
+        "src": "./assets/images/image-tiramisu-thumbnail.jpg",
+        "width": 100,
+        "height": 96
+      },
+      "mobile": {
+        "src": "./assets/images/image-tiramisu-mobile.jpg",
+        "width": 654,
+        "height": 424
+      },
+      "tablet": {
+        "src": "./assets/images/image-tiramisu-tablet.jpg",
+        "width": 427,
+        "height": 424
+      },
+      "desktop": {
+        "src": "./assets/images/image-tiramisu-desktop.jpg",
+        "width": 502,
+        "height": 480
+      }
+    }
+  },
+  {
+    "name": "Pistachio Baklava",
+    "slug": "pistachio-baklava",
+    "category": "Baklava",
+    "price": 4.0,
+    "image": {
+      "thumbnail": {
+        "src": "./assets/images/image-baklava-thumbnail.jpg",
+        "width": 100,
+        "height": 96
+      },
+      "mobile": {
+        "src": "./assets/images/image-baklava-mobile.jpg",
+        "width": 654,
+        "height": 424
+      },
+      "tablet": {
+        "src": "./assets/images/image-baklava-tablet.jpg",
+        "width": 427,
+        "height": 424
+      },
+      "desktop": {
+        "src": "./assets/images/image-baklava-desktop.jpg",
+        "width": 502,
+        "height": 480
+      }
+    }
+  },
+  {
+    "name": "Lemon Meringue Pie",
+    "slug": "lemon-meringue-pie",
+    "category": "Pie",
+    "price": 5.0,
+    "image": {
+      "thumbnail": {
+        "src": "./assets/images/image-meringue-thumbnail.jpg",
+        "width": 100,
+        "height": 96
+      },
+      "mobile": {
+        "src": "./assets/images/image-meringue-mobile.jpg",
+        "width": 654,
+        "height": 424
+      },
+      "tablet": {
+        "src": "./assets/images/image-meringue-tablet.jpg",
+        "width": 427,
+        "height": 424
+      },
+      "desktop": {
+        "src": "./assets/images/image-meringue-desktop.jpg",
+        "width": 502,
+        "height": 480
+      }
+    }
+  },
+  {
+    "name": "Red Velvet Cake",
+    "slug": "red-valvet-cake",
+    "category": "Cake",
+    "price": 4.5,
+    "image": {
+      "thumbnail": {
+        "src": "./assets/images/image-cake-thumbnail.jpg",
+        "width": 100,
+        "height": 96
+      },
+      "mobile": {
+        "src": "./assets/images/image-cake-mobile.jpg",
+        "width": 654,
+        "height": 424
+      },
+      "tablet": {
+        "src": "./assets/images/image-cake-tablet.jpg",
+        "width": 427,
+        "height": 424
+      },
+      "desktop": {
+        "src": "./assets/images/image-cake-desktop.jpg",
+        "width": 502,
+        "height": 480
+      }
+    }
+  },
+  {
+    "name": "Salted Caramel Brownie",
+    "slug": "salted-caramel-brownie",
+    "category": "Brownie",
+    "price": 4.5,
+    "image": {
+      "thumbnail": {
+        "src": "./assets/images/image-brownie-thumbnail.jpg",
+        "width": 100,
+        "height": 96
+      },
+      "mobile": {
+        "src": "./assets/images/image-brownie-mobile.jpg",
+        "width": 654,
+        "height": 424
+      },
+      "tablet": {
+        "src": "./assets/images/image-brownie-tablet.jpg",
+        "width": 427,
+        "height": 424
+      },
+      "desktop": {
+        "src": "./assets/images/image-brownie-desktop.jpg",
+        "width": 502,
+        "height": 480
+      }
+    }
+  },
+  {
+    "name": "Vanilla Panna Cotta",
+    "slug": "vanilla-panna-cotta",
+    "category": "Panna Cotta",
+    "price": 6.5,
+    "image": {
+      "thumbnail": {
+        "src": "./assets/images/image-panna-cotta-thumbnail.jpg",
+        "width": 100,
+        "height": 96
+      },
+      "mobile": {
+        "src": "./assets/images/image-panna-cotta-mobile.jpg",
+        "width": 654,
+        "height": 424
+      },
+      "tablet": {
+        "src": "./assets/images/image-panna-cotta-tablet.jpg",
+        "width": 427,
+        "height": 424
+      },
+      "desktop": {
+        "src": "./assets/images/image-panna-cotta-desktop.jpg",
+        "width": 502,
+        "height": 480
+      }
+    }
+  }
+]

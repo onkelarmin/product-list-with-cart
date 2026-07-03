@@ -1,16 +1,22 @@
 import z from "zod";
-import { CATEGORIES } from "./lib/constants";
+import { CATEGORIES } from "./data/constants";
+
+const ProductImageSchema = z.object({
+  src: z.string(),
+  width: z.number().positive(),
+  height: z.number().positive(),
+});
 
 export const ProductSchema = z.object({
-  id: z.string(),
   name: z.string(),
+  slug: z.string(),
   category: z.enum(CATEGORIES),
   price: z.number().positive(),
   image: z.object({
-    thumbnail: z.string(),
-    mobile: z.string(),
-    tablet: z.string(),
-    desktop: z.string(),
+    thumbnail: ProductImageSchema,
+    mobile: ProductImageSchema,
+    tablet: ProductImageSchema,
+    desktop: ProductImageSchema,
   }),
 });
 
