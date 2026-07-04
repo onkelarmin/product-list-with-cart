@@ -1,5 +1,5 @@
 import styles from "./Heading.module.scss";
-import type { ComponentPropsWithoutRef } from "react";
+import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
 const sizes = {
   h1: "h1",
@@ -13,15 +13,20 @@ const sizes = {
 type HeadingProps = {
   tag: keyof typeof sizes;
   size: keyof typeof sizes;
-  text: string;
+  className?: string;
+  children: ReactNode;
 } & ComponentPropsWithoutRef<"h1">;
 
-export function Heading({ tag, size, text }: HeadingProps) {
+export function Heading({ tag, size, children, ...rest }: HeadingProps) {
   const Component = tag;
 
   return (
-    <Component className={styles.heading} data-size={sizes[size]}>
-      {text}
+    <Component
+      className={`${styles.heading}`}
+      data-size={sizes[size]}
+      {...rest}
+    >
+      {children}
     </Component>
   );
 }

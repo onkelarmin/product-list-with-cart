@@ -1,3 +1,4 @@
+import type { ComponentPropsWithoutRef } from "react";
 import { breakpoints } from "../../../data/breakpoints";
 
 type ScreenSizes = "desktop" | "tablet" | "mobile";
@@ -12,20 +13,21 @@ type ImageProps = {
   image: ImageSource;
   alt: string;
   responsiveSources?: Partial<Record<ScreenSizes, ImageSource>>;
-  sizes?: {
+  imageSizes?: {
     mobile: string;
     tablet: string;
     desktop: string;
   };
   priority?: boolean;
-};
+} & ComponentPropsWithoutRef<"img">;
 
 export function Image({
   image,
   alt,
   responsiveSources,
-  sizes,
+  imageSizes,
   priority = false,
+  ...rest
 }: ImageProps) {
   const srcSetValue = responsiveSources
     ? [
@@ -41,8 +43,8 @@ export function Image({
     : undefined;
 
   const sizesValue =
-    srcSetValue && sizes
-      ? `(max-width: ${breakpoints.medium}) ${sizes.mobile}, (max-width: ${breakpoints.large}) ${sizes.tablet}, ${sizes.desktop}`
+    srcSetValue && imageSizes
+      ? `(max-width: ${breakpoints.medium}) ${imageSizes.mobile}, (max-width: ${breakpoints.large}) ${imageSizes.tablet}, ${imageSizes.desktop}`
       : undefined;
 
   return (
@@ -55,6 +57,7 @@ export function Image({
       decoding={priority ? "auto" : "async"}
       srcSet={srcSetValue}
       sizes={sizesValue}
+      {...rest}
     />
   );
 }

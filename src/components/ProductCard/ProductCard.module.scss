@@ -1,0 +1,37 @@
+@use "../../sass/miscellaneous" as *;
+
+.productCard {
+  display: grid;
+}
+
+.image {
+  border-radius: var(--br-md);
+  outline: var(--bw-lg) solid var(--bc-none);
+  outline-offset: var(--bw-lg);
+  transition: outline-color var(--trans-fast-out);
+
+  &.isInCart {
+    outline-color: var(--bc-image-highlight);
+  }
+}
+
+.controls {
+  position: relative;
+  margin-block-start: var(--offset-controls);
+}
+
+.cartIcon {
+  color: var(--clr-primary-500);
+}
+
+.info {
+  align-self: end;
+  display: grid;
+  gap: var(--size-4);
+  margin-block-start: var(--size-16);
+
+  .price {
+    font: var(--font-3);
+    color: var(--fg-text-primary);
+  }
+}

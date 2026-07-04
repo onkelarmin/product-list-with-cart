@@ -16,6 +16,8 @@ $padding-section: (
 
 // Container padding
 $padding-container: (
+  product-counter-inline: rem(12px),
+  product-counter-block: rem(12px),
   cart-inline: rem(24px),
   cart-block: rem(24px),
   confirmation-inline: bp(24px, 40px, 40px),
@@ -36,4 +38,5 @@ $spacer-container: (
 // Offset
 $offset: (
   default-focus: rem(3px),
+  controls: rem(-22px),
 );

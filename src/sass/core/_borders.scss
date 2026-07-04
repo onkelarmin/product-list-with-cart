@@ -10,6 +10,9 @@ $border-colors: (
   none: (
     light: "transparent",
   ),
+  image-highlight: (
+    light: "primary-500",
+  ),
   default-focus: (
     light: "primary-500",
   ),
@@ -20,6 +23,11 @@ $borders: (
     width: "none",
     style: "solid",
     color: "none",
+  ),
+  image-highlight: (
+    width: "lg",
+    style: "solid",
+    color: "image-highlight",
   ),
   default-focus: (
     width: "lg",

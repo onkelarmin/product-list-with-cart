@@ -6,15 +6,22 @@ import { products } from "../../data/products";
 
 export function ProductList() {
   return (
-    <section aria-labelledby="product-list-heading">
+    <main>
       <Wrapper>
-        <Heading tag="h1" size="h1" text="Desserts" id="product-list-heading" />
+        <Heading tag="h1" size="h1">
+          Desserts
+        </Heading>
+
+        <Heading tag="h2" size="h2" className="visually-hidden">
+          Selection of our available desserts
+        </Heading>
+
         <ul className={styles.productList}>
           {products.map((product) => (
             <ProductCard key={product.slug} product={product} />
           ))}
         </ul>
       </Wrapper>
-    </section>
+    </main>
   );
 }

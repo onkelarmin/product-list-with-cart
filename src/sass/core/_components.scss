@@ -28,28 +28,105 @@ $button-colors: (
       ),
     ),
   ),
+  add-to-cart: (
+    idle: (
+      bg: (
+        light: "neutral-000",
+      ),
+      fg: (
+        light: "neutral-900",
+      ),
+      border: (
+        light: "rose-400",
+      ),
+    ),
+    hover: (
+      bg: (
+        light: "neutral-000",
+      ),
+      fg: (
+        light: "primary-500",
+      ),
+      border: (
+        light: "primary-500",
+      ),
+    ),
+    disabled: (
+      bg: (
+        light: "rose-100",
+      ),
+      fg: (
+        light: "rose-300",
+      ),
+    ),
+  ),
+  counter: (
+    idle: (
+      bg: (
+        light: "transparent",
+      ),
+      fg: (
+        light: "neutral-000",
+      ),
+      border: (
+        light: "neutral-000",
+      ),
+    ),
+    hover: (
+      bg: (
+        light: "neutral-000",
+      ),
+      fg: (
+        light: "primary-500",
+      ),
+      border: (
+        light: "neutral-000",
+      ),
+    ),
+    focus: (
+      outline: (
+        light: "neutral-000",
+      ),
+    ),
+    disabled: (
+      bg: (
+        light: "rose-100",
+      ),
+      fg: (
+        light: "rose-300",
+      ),
+    ),
+  ),
 );
 
 $button-appearance: (
-  padding-inline-start: (
+  padding-inline: (
     default: rem(16px),
-  ),
-  padding-inline-end: (
-    default: rem(16px),
+    add-to-cart: rem(12px),
+    counter: rem(3px),
   ),
   padding-block: (
     default: rem(16px),
+    add-to-cart: rem(12px),
+    counter: rem(3px),
   ),
   border-width: (
     default: 0px,
+    add-to-cart: rem(1px),
+    counter: rem(1.25px),
   ),
   border-radius: (
     default: 1000px,
+    add-to-cart: 1000px,
+    counter: 50%,
   ),
   svg-width: (
-    default: rem(14px),
+    default: rem(20px),
+    add-to-cart: rem(20px),
+    counter: rem(10px),
   ),
   gap: (
-    default: rem(12px),
+    default: rem(8px),
+    add-to-cart: rem(8px),
   ),
 );

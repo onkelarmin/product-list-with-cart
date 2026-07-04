@@ -1,3 +1,16 @@
+@use "../../sass/miscellaneous" as *;
+
 .productList {
+  display: grid;
+  row-gap: var(--space-cont-product-grid-row-gap);
+  column-gap: var(--space-cont-product-grid-col-gap);
   margin-block-start: var(--space-cont-lg);
+
+  @include mq(small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq(medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

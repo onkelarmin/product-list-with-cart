@@ -1,0 +1,17 @@
+.productCounter {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  width: min(100%, var(--size-misc-product-card-button));
+  background-color: var(--clr-primary-500);
+  border-radius: var(--br-pill);
+  padding-inline: var(--pad-cont-product-counter-inline);
+  padding-block: var(--pad-cont-product-counter-block);
+  margin-inline: auto;
+}
+
+.count {
+  font: var(--font-6);
+  text-align: center;
+  color: var(--clr-neutral-000);
+}
