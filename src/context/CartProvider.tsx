@@ -58,11 +58,7 @@ type CartProviderProps = {
 };
 
 export function CartProvider({ children }: CartProviderProps) {
-  const [cart, dispatch] = useReducer(reducer, {
-    "classic-tiramisu": 1,
-    "vanilla-bean-creme-brulee": 4,
-    "vanilla-panna-cotta": 2,
-  });
+  const [cart, dispatch] = useReducer(reducer, {});
 
   return (
     <CartDispatchContext.Provider value={dispatch}>

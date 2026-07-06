@@ -10,9 +10,10 @@ import { Picture } from "../utilities/Picture/Picture";
 
 type ProductCardProps = {
   product: ProductType;
+  priorityImage: boolean;
 };
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, priorityImage }: ProductCardProps) {
   const cart = useCartValue();
   const dispatch = useCartDispatch();
   const isInCart = Object.hasOwn(cart, product.slug);
@@ -23,12 +24,12 @@ export function ProductCard({ product }: ProductCardProps) {
         sources={product.image}
         alt={product.name}
         imgClassName={`${styles.image} ${isInCart && styles.isInCart}`}
-        priority
+        priority={priorityImage}
       />
 
       <div className={styles.controls}>
         {isInCart ? (
-          <ProductCounter slug={product.slug} />
+          <ProductCounter slug={product.slug} productName={product.name} />
         ) : (
           <Button
             variant="addToCart"
@@ -37,7 +38,10 @@ export function ProductCard({ product }: ProductCardProps) {
             }
           >
             <CartIcon className={styles.cartIcon} aria-hidden="true" />
-            <span>Add to Cart</span>
+            <span>
+              Add <span className="visually-hidden">{product.name}</span> to
+              Cart
+            </span>
           </Button>
         )}
       </div>

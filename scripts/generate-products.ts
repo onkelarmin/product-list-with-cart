@@ -9,7 +9,6 @@ function validateProducts(data: unknown) {
   const result = ProductsSchema.safeParse(data);
 
   if (!result.success) {
-    console.error(result.error.format());
     throw new Error("Invalid product data format");
   }
 

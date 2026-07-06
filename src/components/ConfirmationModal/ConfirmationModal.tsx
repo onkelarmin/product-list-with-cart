@@ -49,10 +49,14 @@ export function ConfirmationModal({
   }, [onClose]);
 
   return createPortal(
-    <dialog ref={dialogRef} className={styles.confirmationModal}>
+    <dialog
+      ref={dialogRef}
+      className={styles.confirmationModal}
+      aria-labelledby="confirmation-modal-title"
+    >
       <ConfirmationIcon aria-hidden="true" className="mar-block-end-24" />
 
-      <Heading tag="h2" size="h1">
+      <Heading tag="h2" size="h1" id="confirmation-modal-title">
         Order Confirmed
       </Heading>
 

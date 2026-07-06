@@ -6,14 +6,18 @@ import { CartProvider } from "./context/CartProvider";
 
 function App() {
   return (
-    <CartProvider>
-      <Wrapper>
-        <div className={styles.layout}>
-          <ProductList />
-          <Cart />
-        </div>
-      </Wrapper>
-    </CartProvider>
+    <>
+      <title>Product List with Cart</title>
+
+      <CartProvider>
+        <Wrapper>
+          <div className={styles.layout}>
+            <ProductList />
+            <Cart />
+          </div>
+        </Wrapper>
+      </CartProvider>
+    </>
   );
 }
 

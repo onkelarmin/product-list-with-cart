@@ -15,8 +15,10 @@ export function ProductList() {
       </Heading>
 
       <ul className={styles.productList}>
-        {products.map((product) => (
-          <ProductCard key={product.slug} product={product} />
+        {products.map((product, index) => (
+          <li key={product.slug} className="list-style-none">
+            <ProductCard product={product} priorityImage={index <= 5} />
+          </li>
         ))}
       </ul>
     </main>

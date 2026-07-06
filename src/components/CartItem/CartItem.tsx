@@ -36,7 +36,7 @@ export function CartItem({ product, quantity, subtotal }: CartItemProps) {
         }
       >
         <RemoveIcon aria-hidden="true" />
-        <span className="visually-hidden">Remove item</span>
+        <span className="visually-hidden">Remove {product.name} from cart</span>
       </Button>
     </li>
   );

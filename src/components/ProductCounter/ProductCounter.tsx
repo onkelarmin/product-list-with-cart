@@ -6,9 +6,10 @@ import { Button } from "../utilities/Button/Button";
 
 type ProductCounterProps = {
   slug: string;
+  productName: string;
 };
 
-export function ProductCounter({ slug }: ProductCounterProps) {
+export function ProductCounter({ slug, productName }: ProductCounterProps) {
   const cart = useCartValue();
   const dispatch = useCartDispatch();
 
@@ -21,7 +22,7 @@ export function ProductCounter({ slug }: ProductCounterProps) {
         onClick={() => dispatch({ type: "Decrement", payload: { slug } })}
       >
         <DecrementIcon />
-        <span className="visually-hidden">Remove item</span>
+        <span className="visually-hidden">Decrease {productName} quantity</span>
       </Button>
 
       <div className={styles.count}>{count}</div>
@@ -31,7 +32,7 @@ export function ProductCounter({ slug }: ProductCounterProps) {
         onClick={() => dispatch({ type: "Add", payload: { slug } })}
       >
         <IncrementIcon />
-        <span className="visually-hidden">Add item</span>
+        <span className="visually-hidden">Increase {productName} quantity</span>
       </Button>
     </div>
   );

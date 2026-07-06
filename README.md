@@ -1,77 +1,97 @@
-# React + TypeScript + Vite
+# Product List with Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive product listing page that allows users to browse desserts, manage a shopping cart, and complete an order through a clean, interactive interface.
 
-Currently, two official plugins are available:
+Built as part of a Frontend Mentor challenge, this project marks my first application built with React. The primary goal was to become comfortable with React's component model, hooks, and state management while establishing a reusable foundation for future React projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project also represents the first React integration of my custom Sass design system, which provides reusable design tokens, utility classes, and a consistent styling workflow across projects. Adapting the system for React helped establish a scalable setup that I plan to reuse in future applications.
 
-## React Compiler
+Alongside learning React, I also began incorporating small Node.js build scripts into my workflow. These scripts automate repetitive tasks such as transforming project data into strongly typed TypeScript modules and synchronizing design tokens like breakpoints between Sass and TypeScript, helping to maintain a single source of truth throughout the project.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## Technologies used
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- TypeScript
+- SCSS Modules
+- Zod
+- Node.js build scripts
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Browse available products
+- Add and remove items from the cart
+- Increment and decrement product quantities
+- Automatically calculate order totals
+- Order confirmation dialog
+- Responsive images using <picture>
+- Responsive layout for all screen sizes
+- Accessible semantic markup
+- Fully responsive design
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
-```
+## Architecture
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Reducer-Based State Management
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Application state is managed using React's useReducer hook.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The reducer stores only the application's domain state by tracking product quantities keyed by product slug. Product information such as names, prices, and images remains separate from the reducer state and is derived when rendering the UI.
 
-```
+Reducers remain:
+
+- Pure
+- Deterministic
+- Side-effect free
+
+### Reusable Design System
+
+The application uses my custom Sass design system, which serves as the foundation for styling. Design tokens are defined using Sass maps and compiled into CSS custom properties, providing a consistent and scalable approach to spacing, typography, colours, sizing, and layout.
+
+The design system was adapted to work seamlessly within a React + Vite workflow while remaining reusable across future projects.
+
+### Data Generation
+
+Rather than importing raw JSON directly into the application, a small Node.js build script transforms the product data into a typed TypeScript module.
+
+During the build process the script:
+
+- Validates the product data
+- Imports image assets
+- Generates a strongly typed products.ts module
+
+This removes the need for manually maintaining image imports while keeping the application fully type-safe.
+
+### Responsive Images
+
+A reusable Picture component encapsulates responsive image handling using the native <picture> element.
+
+The component abstracts responsive image selection while keeping the API simple for future projects.
+
+---
+
+## What I've learned
+
+- Building my first application using React
+- Managing application state with useState, useReducer, and useEffect
+- Designing reusable React components
+- Thinking in terms of component composition rather than page-based JavaScript
+- Integrating my existing Sass design system into a React + Vite workflow
+- Using small Node.js scripts to automate repetitive development tasks
+
+---
+
+## Live Demo
+
+add link
+
+---
+
+## Preview
+
+add preview
