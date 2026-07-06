@@ -3,7 +3,7 @@ import styles from "./Button.module.scss";
 
 type ButtonProps<T extends ElementType> = {
   As?: T;
-  variant?: "default" | "addToCart" | "counter";
+  variant?: "default" | "addToCart" | "counter" | "removeFromCart";
   children: ReactNode;
 } & ComponentPropsWithoutRef<T>;
 

@@ -7,7 +7,7 @@
 .image {
   border-radius: var(--br-md);
   outline: var(--bw-lg) solid var(--bc-none);
-  outline-offset: var(--bw-lg);
+  outline-offset: calc(var(--bw-lg) * -1);
   transition: outline-color var(--trans-fast-out);
 
   &.isInCart {

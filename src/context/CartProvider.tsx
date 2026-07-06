@@ -5,7 +5,9 @@ export type Cart = Record<string, number>;
 
 export type Action =
   | { type: "Add"; payload: { slug: string } }
-  | { type: "Decrement"; payload: { slug: string } };
+  | { type: "Decrement"; payload: { slug: string } }
+  | { type: "Remove"; payload: { slug: string } }
+  | { type: "Clear" };
 
 function reducer(cart: Cart, action: Action): Cart {
   switch (action.type) {
@@ -30,6 +32,20 @@ function reducer(cart: Cart, action: Action): Cart {
       }
 
       return { ...cart, [slug]: cart[slug] - 1 };
+    }
+
+    case "Remove": {
+      const { slug } = action.payload;
+      if (slug == null) return cart;
+
+      const newCart = { ...cart };
+      delete newCart[slug];
+
+      return newCart;
+    }
+
+    case "Clear": {
+      return {};
     }
 
     default:

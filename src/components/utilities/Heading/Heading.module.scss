@@ -7,8 +7,12 @@
   }
   &[data-size="h2"] {
     font: var(--font-2);
+    color: var(--fg-text-primary);
   }
   &[data-size="h3"] {
     font: var(--font-3);
+  }
+  &[data-size="h4"] {
+    font: var(--font-6);
   }
 }

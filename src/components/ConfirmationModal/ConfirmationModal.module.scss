@@ -1,0 +1,47 @@
+@use "../../sass/miscellaneous" as *;
+
+.confirmationModal {
+  place-self: center;
+  width: 100%;
+  max-width: 100vw;
+  background-color: var(--bg-container-default);
+  color: var(--fg-text-base);
+  border-radius: var(--br-lg);
+  border: none;
+  padding: var(--size-40);
+
+  &::backdrop {
+    background-color: var(--bg-overlay-confirmation-modal);
+  }
+
+  @include mq(medium) {
+    width: calc(
+      100% - var(--pad-page-inline-start) - var(--pad-page-inline-end)
+    );
+    margin-block-start: 0;
+  }
+
+  @include mq(large) {
+    width: 100%;
+    max-width: 37rem;
+  }
+}
+
+.cart {
+  background-color: var(--bg-container-confirmation-cart);
+  border-radius: var(--br-md);
+  padding: var(--size-24);
+  margin-block: var(--size-32);
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--fg-text-strong);
+  padding-block-start: var(--size-24);
+
+  data {
+    font: var(--font-2);
+  }
+}

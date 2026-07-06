@@ -49,6 +49,17 @@ $background-colors: (
     default: (
       light: "neutral-000",
     ),
+    carbon-neutral: (
+      light: "rose-050",
+    ),
+    confirmation-cart: (
+      light: "rose-050",
+    ),
+  ),
+  overlay: (
+    confirmation-modal: (
+      light: "neutral-900" 0.5,
+    ),
   ),
   text: (
     selection: (

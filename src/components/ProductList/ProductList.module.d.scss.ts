@@ -1,6 +1,9 @@
 declare const classNames: {
   readonly "bg-canvas-default": "bg-canvas-default";
   readonly "bg-container-default": "bg-container-default";
+  readonly "bg-container-carbon-neutral": "bg-container-carbon-neutral";
+  readonly "bg-container-confirmation-cart": "bg-container-confirmation-cart";
+  readonly "bg-overlay-confirmation-modal": "bg-overlay-confirmation-modal";
   readonly "bg-text-selection": "bg-text-selection";
   readonly "bg-text-target": "bg-text-target";
   readonly "fg-text-base": "fg-text-base";
@@ -21,6 +24,7 @@ declare const classNames: {
   readonly "br-40": "br-40";
   readonly "br-48": "br-48";
   readonly "br-64": "br-64";
+  readonly "br-sm": "br-sm";
   readonly "br-md": "br-md";
   readonly "br-lg": "br-lg";
   readonly "br-default-focus": "br-default-focus";
@@ -37,6 +41,11 @@ declare const classNames: {
   readonly "border-bottom-image-highlight": "border-bottom-image-highlight";
   readonly "border-left-image-highlight": "border-left-image-highlight";
   readonly "border-right-image-highlight": "border-right-image-highlight";
+  readonly "border-cart-item": "border-cart-item";
+  readonly "border-top-cart-item": "border-top-cart-item";
+  readonly "border-bottom-cart-item": "border-bottom-cart-item";
+  readonly "border-left-cart-item": "border-left-cart-item";
+  readonly "border-right-cart-item": "border-right-cart-item";
   readonly "border-default-focus": "border-default-focus";
   readonly "border-top-default-focus": "border-top-default-focus";
   readonly "border-bottom-default-focus": "border-bottom-default-focus";
@@ -299,13 +308,6 @@ declare const classNames: {
   readonly "mar-inline-64": "mar-inline-64";
   readonly "mar-inline-start-64": "mar-inline-start-64";
   readonly "mar-inline-end-64": "mar-inline-end-64";
-  readonly "mar-lg": "mar-lg";
-  readonly "mar-block-lg": "mar-block-lg";
-  readonly "mar-block-start-lg": "mar-block-start-lg";
-  readonly "mar-block-end-lg": "mar-block-end-lg";
-  readonly "mar-inline-lg": "mar-inline-lg";
-  readonly "mar-inline-start-lg": "mar-inline-start-lg";
-  readonly "mar-inline-end-lg": "mar-inline-end-lg";
   readonly "mar-main-layout-gap": "mar-main-layout-gap";
   readonly "mar-block-main-layout-gap": "mar-block-main-layout-gap";
   readonly "mar-block-start-main-layout-gap": "mar-block-start-main-layout-gap";
@@ -327,20 +329,6 @@ declare const classNames: {
   readonly "mar-inline-product-grid-row-gap": "mar-inline-product-grid-row-gap";
   readonly "mar-inline-start-product-grid-row-gap": "mar-inline-start-product-grid-row-gap";
   readonly "mar-inline-end-product-grid-row-gap": "mar-inline-end-product-grid-row-gap";
-  readonly "mar-product-card-gap": "mar-product-card-gap";
-  readonly "mar-block-product-card-gap": "mar-block-product-card-gap";
-  readonly "mar-block-start-product-card-gap": "mar-block-start-product-card-gap";
-  readonly "mar-block-end-product-card-gap": "mar-block-end-product-card-gap";
-  readonly "mar-inline-product-card-gap": "mar-inline-product-card-gap";
-  readonly "mar-inline-start-product-card-gap": "mar-inline-start-product-card-gap";
-  readonly "mar-inline-end-product-card-gap": "mar-inline-end-product-card-gap";
-  readonly "mar-product-card-text-gap": "mar-product-card-text-gap";
-  readonly "mar-block-product-card-text-gap": "mar-block-product-card-text-gap";
-  readonly "mar-block-start-product-card-text-gap": "mar-block-start-product-card-text-gap";
-  readonly "mar-block-end-product-card-text-gap": "mar-block-end-product-card-text-gap";
-  readonly "mar-inline-product-card-text-gap": "mar-inline-product-card-text-gap";
-  readonly "mar-inline-start-product-card-text-gap": "mar-inline-start-product-card-text-gap";
-  readonly "mar-inline-end-product-card-text-gap": "mar-inline-end-product-card-text-gap";
   readonly "flow-2": "flow-2";
   readonly "flow-4": "flow-4";
   readonly "flow-6": "flow-6";
@@ -354,12 +342,9 @@ declare const classNames: {
   readonly "flow-40": "flow-40";
   readonly "flow-48": "flow-48";
   readonly "flow-64": "flow-64";
-  readonly "flow-lg": "flow-lg";
   readonly "flow-main-layout-gap": "flow-main-layout-gap";
   readonly "flow-product-grid-col-gap": "flow-product-grid-col-gap";
   readonly "flow-product-grid-row-gap": "flow-product-grid-row-gap";
-  readonly "flow-product-card-gap": "flow-product-card-gap";
-  readonly "flow-product-card-text-gap": "flow-product-card-text-gap";
   readonly "visually-hidden": "visually-hidden";
   readonly "overflow-clip": "overflow-clip";
   readonly "overflow-x-clip": "overflow-x-clip";

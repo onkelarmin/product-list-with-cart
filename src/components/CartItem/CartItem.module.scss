@@ -1,0 +1,23 @@
+.cartItem {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border-bottom: var(--border-cart-item);
+  padding-block: var(--size-16);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+  margin-block-start: var(--size-8);
+
+  .quantity {
+    font: var(--font-6);
+    color: var(--fg-text-primary);
+  }
+
+  .subtotal {
+    font: var(--font-6);
+  }
+}

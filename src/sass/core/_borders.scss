@@ -13,6 +13,9 @@ $border-colors: (
   image-highlight: (
     light: "primary-500",
   ),
+  cart-item: (
+    light: "rose-100",
+  ),
   default-focus: (
     light: "primary-500",
   ),
@@ -28,6 +31,11 @@ $borders: (
     width: "lg",
     style: "solid",
     color: "image-highlight",
+  ),
+  cart-item: (
+    width: "md",
+    style: "solid",
+    color: "cart-item",
   ),
   default-focus: (
     width: "lg",

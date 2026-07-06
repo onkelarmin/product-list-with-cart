@@ -1,0 +1,11 @@
+@use "./sass/miscellaneous" as *;
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-cont-main-layout-gap);
+
+  @include mq(large) {
+    flex-direction: row;
+  }
+}

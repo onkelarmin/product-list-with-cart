@@ -27,12 +27,9 @@ $padding-container: (
 
 // Container spacing
 $spacer-container: (
-  lg: rem(32px),
   main-layout-gap: rem(32px),
   product-grid-col-gap: rem(24px),
   product-grid-row-gap: bp(24px, 32px, 32px),
-  product-card-gap: rem(16px),
-  product-card-text-gap: rem(4px),
 );
 
 // Offset

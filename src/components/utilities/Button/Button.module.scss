@@ -38,6 +38,7 @@
 
   &[data-variant="addToCart"] {
     width: min(100%, var(--size-misc-product-card-button));
+    height: 2.75rem;
     background-color: var(--btn-bg-color-idle-add-to-cart);
     color: var(--btn-fg-color-idle-add-to-cart);
     border: var(--btn-border-width-add-to-cart) solid
@@ -93,6 +94,34 @@
     &:disabled {
       background-color: var(--btn-bg-color-disabled-counter);
       color: var(--btn-fg-color-disabled-counter);
+      cursor: not-allowed;
+    }
+  }
+
+  &[data-variant="removeFromCart"] {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    background-color: var(--btn-bg-color-idle-remove-from-cart);
+    color: var(--btn-fg-color-idle-remove-from-cart);
+    border: var(--btn-border-width-remove-from-cart) solid
+      var(--btn-border-color-idle-remove-from-cart);
+    border-radius: var(--btn-border-radius-remove-from-cart);
+    padding-inline: var(--btn-padding-inline-remove-from-cart);
+    padding-block: var(--btn-padding-block-remove-from-cart);
+
+    @media (hover: hover) {
+      &:not(:disabled):hover {
+        background-color: var(--btn-bg-color-hover-remove-from-cart);
+        color: var(--btn-fg-color-hover-remove-from-cart);
+        border: var(--btn-border-width-remove-from-cart) solid
+          var(--btn-border-color-hover-remove-from-cart);
+      }
+    }
+
+    &:disabled {
+      background-color: var(--btn-bg-color-disabled-remove-from-cart);
+      color: var(--btn-fg-color-disabled-remove-from-cart);
       cursor: not-allowed;
     }
   }

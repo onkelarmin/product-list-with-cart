@@ -62,6 +62,7 @@ declare const classNames: {
   readonly "mar-inline-auto-small": "mar-inline-auto-small";
   readonly "text-center-medium": "text-center-medium";
   readonly "mar-inline-auto-medium": "mar-inline-auto-medium";
+  readonly confirmationModal: "confirmationModal";
   readonly "text-center-large": "text-center-large";
   readonly "mar-inline-auto-large": "mar-inline-auto-large";
   readonly uppercase: "uppercase";
@@ -352,12 +353,7 @@ declare const classNames: {
   readonly "fit-content": "fit-content";
   readonly js: "js";
   readonly "gsap-auto-alpha": "gsap-auto-alpha";
-  readonly productCard: "productCard";
-  readonly image: "image";
-  readonly isInCart: "isInCart";
-  readonly controls: "controls";
-  readonly cartIcon: "cartIcon";
-  readonly info: "info";
-  readonly price: "price";
+  readonly cart: "cart";
+  readonly totalPrice: "totalPrice";
 };
 export = classNames;

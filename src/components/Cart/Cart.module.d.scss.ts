@@ -64,6 +64,7 @@ declare const classNames: {
   readonly "mar-inline-auto-medium": "mar-inline-auto-medium";
   readonly "text-center-large": "text-center-large";
   readonly "mar-inline-auto-large": "mar-inline-auto-large";
+  readonly cart: "cart";
   readonly uppercase: "uppercase";
   readonly "mar-inline-auto": "mar-inline-auto";
   readonly "center-block": "center-block";
@@ -352,12 +353,9 @@ declare const classNames: {
   readonly "fit-content": "fit-content";
   readonly js: "js";
   readonly "gsap-auto-alpha": "gsap-auto-alpha";
-  readonly productCard: "productCard";
-  readonly image: "image";
-  readonly isInCart: "isInCart";
-  readonly controls: "controls";
-  readonly cartIcon: "cartIcon";
-  readonly info: "info";
-  readonly price: "price";
+  readonly emptyCart: "emptyCart";
+  readonly totalPrice: "totalPrice";
+  readonly carbonNeutral: "carbonNeutral";
+  readonly strong: "strong";
 };
 export = classNames;

@@ -1,0 +1,37 @@
+.confirmationItem {
+  display: grid;
+  grid-template-columns: 3rem 1fr auto;
+  gap: var(--size-16);
+  align-items: center;
+  border-block-end: var(--border-cart-item);
+
+  &:not(:first-child) {
+    padding-block-start: var(--size-16);
+  }
+  &:not(:last-child) {
+    padding-block-end: var(--size-16);
+  }
+  &:last-child {
+    padding-block-end: var(--size-24);
+  }
+}
+
+.image {
+  border-radius: var(--br-sm);
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+
+  .quantity {
+    font: var(--font-6);
+    color: var(--fg-text-primary);
+  }
+}
+
+.subtotal {
+  font: var(--font-3);
+  color: var(--fg-text-strong);
+}

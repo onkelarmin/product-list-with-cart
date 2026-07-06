@@ -4,7 +4,7 @@
   display: grid;
   row-gap: var(--space-cont-product-grid-row-gap);
   column-gap: var(--space-cont-product-grid-col-gap);
-  margin-block-start: var(--space-cont-lg);
+  margin-block-start: var(--size-32);
 
   @include mq(small) {
     grid-template-columns: repeat(2, 1fr);

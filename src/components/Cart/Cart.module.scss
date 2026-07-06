@@ -1,0 +1,54 @@
+@use "../../sass/miscellaneous" as *;
+
+.cart {
+  width: 100%;
+  display: grid;
+  gap: var(--size-24);
+  background-color: var(--bg-container-default);
+  border-radius: var(--br-lg);
+  padding: var(--size-24);
+
+  @include mq(large) {
+    max-width: 24rem;
+    align-self: flex-start;
+  }
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: var(--size-16);
+
+  p {
+    font: var(--font-6);
+    text-align: center;
+    margin-block-start: var(--size-16);
+  }
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--fg-text-strong);
+
+  data {
+    font: var(--font-2);
+  }
+}
+
+.carbonNeutral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-8);
+  background-color: var(--bg-container-carbon-neutral);
+  color: var(--fg-text-strong);
+  border-radius: var(--br-md);
+  padding: var(--size-16);
+
+  .strong {
+    font: var(--font-6);
+  }
+}

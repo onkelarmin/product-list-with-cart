@@ -23,6 +23,7 @@ export function ProductCard({ product }: ProductCardProps) {
         sources={product.image}
         alt={product.name}
         imgClassName={`${styles.image} ${isInCart && styles.isInCart}`}
+        priority
       />
 
       <div className={styles.controls}>

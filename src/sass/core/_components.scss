@@ -97,6 +97,38 @@ $button-colors: (
       ),
     ),
   ),
+  remove-from-cart: (
+    idle: (
+      bg: (
+        light: "transparent",
+      ),
+      fg: (
+        light: "rose-400",
+      ),
+      border: (
+        light: "rose-400",
+      ),
+    ),
+    hover: (
+      bg: (
+        light: "transparent",
+      ),
+      fg: (
+        light: "rose-900",
+      ),
+      border: (
+        light: "rose-900",
+      ),
+    ),
+    disabled: (
+      bg: (
+        light: "rose-100",
+      ),
+      fg: (
+        light: "rose-300",
+      ),
+    ),
+  ),
 );
 
 $button-appearance: (
@@ -104,26 +136,31 @@ $button-appearance: (
     default: rem(16px),
     add-to-cart: rem(12px),
     counter: rem(3px),
+    remove-from-cart: rem(3px),
   ),
   padding-block: (
     default: rem(16px),
     add-to-cart: rem(12px),
     counter: rem(3px),
+    remove-from-cart: rem(3px),
   ),
   border-width: (
     default: 0px,
     add-to-cart: rem(1px),
     counter: rem(1.25px),
+    remove-from-cart: rem(1.25px),
   ),
   border-radius: (
     default: 1000px,
     add-to-cart: 1000px,
     counter: 50%,
+    remove-from-cart: 50%,
   ),
   svg-width: (
     default: rem(20px),
     add-to-cart: rem(20px),
     counter: rem(10px),
+    remove-from-cart: rem(8.75px),
   ),
   gap: (
     default: rem(8px),

@@ -17,12 +17,18 @@ type HeadingProps = {
   children: ReactNode;
 } & ComponentPropsWithoutRef<"h1">;
 
-export function Heading({ tag, size, children, ...rest }: HeadingProps) {
+export function Heading({
+  tag,
+  size,
+  children,
+  className,
+  ...rest
+}: HeadingProps) {
   const Component = tag;
 
   return (
     <Component
-      className={`${styles.heading}`}
+      className={`${styles.heading} ${className}`}
       data-size={sizes[size]}
       {...rest}
     >
