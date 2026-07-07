@@ -17,6 +17,9 @@ Alongside learning React, I also began incorporating small Node.js build scripts
 - TypeScript
 - SCSS Modules
 - Zod
+- Vitest
+- React Testing Library
+- User Event
 - Node.js build scripts
 
 ---
@@ -73,6 +76,16 @@ A reusable Picture component encapsulates responsive image handling using the na
 
 The component abstracts responsive image selection while keeping the API simple for future projects.
 
+### Testing
+
+The application includes:
+
+- Unit tests for the cart reducer
+- Component tests for the ProductCard component
+- Integration tests covering the primary user flow from adding products to updating the shopping cart
+
+The tests focus on user behaviour using React Testing Library and User Event while keeping business logic independently verified through reducer tests.
+
 ---
 
 ## What I've learned
@@ -82,6 +95,7 @@ The component abstracts responsive image selection while keeping the API simple 
 - Designing reusable React components
 - Thinking in terms of component composition rather than page-based JavaScript
 - Integrating my existing Sass design system into a React + Vite workflow
+- Writing unit, component, and integration tests using Vitest and React Testing Library
 - Using small Node.js scripts to automate repetitive development tasks
 
 ---
