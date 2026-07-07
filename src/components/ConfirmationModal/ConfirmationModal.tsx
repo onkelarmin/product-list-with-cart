@@ -88,6 +88,6 @@ export function ConfirmationModal({
         Start New Order
       </Button>
     </dialog>,
-    document.querySelector("#confirmation-modal")!,
+    document.body,
   );
 }

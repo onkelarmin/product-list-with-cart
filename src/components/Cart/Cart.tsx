@@ -36,8 +36,8 @@ export function Cart() {
   }, 0);
 
   return (
-    <aside className={styles.cart}>
-      <Heading tag="h2" size="h2">
+    <aside className={styles.cart} aria-labelledby="cart-title">
+      <Heading tag="h2" size="h2" id="cart-title">
         Your Cart ({totalQuantity})
       </Heading>
 
@@ -48,7 +48,7 @@ export function Cart() {
         </div>
       ) : (
         <>
-          <ul>
+          <ul aria-label="Cart items">
             {cartItems.map((item) => (
               <CartItem
                 key={item.product.slug}
@@ -61,7 +61,9 @@ export function Cart() {
 
           <div className={styles.totalPrice}>
             <span>Order Total</span>
-            <data value={totalPrice}>{formatCurrency(totalPrice)}</data>
+            <data value={totalPrice} aria-label="Order total">
+              {formatCurrency(totalPrice)}
+            </data>
           </div>
 
           <div className={styles.carbonNeutral}>
