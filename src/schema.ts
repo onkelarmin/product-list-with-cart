@@ -1,5 +1,5 @@
 import z from "zod";
-import { CATEGORIES } from "./data/constants";
+import { CATEGORIES } from "./data/constants.ts";
 
 const ProductImageSchema = z.object({
   src: z.string(),
