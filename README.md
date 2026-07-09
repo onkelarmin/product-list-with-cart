@@ -102,10 +102,10 @@ The tests focus on user behaviour using React Testing Library and User Event whi
 
 ## Live Demo
 
-add link
+https://fm-productlist-with-cart.netlify.app/
 
 ---
 
 ## Preview
 
-add preview
+https://github.com/user-attachments/assets/67dea796-888f-4613-b340-a1facafdc081
